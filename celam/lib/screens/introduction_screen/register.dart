@@ -77,7 +77,7 @@ class Signup extends StatelessWidget {
                         obscureText: true,
                         keyboardType: TextInputType.number,
                         inputFormatters: [
-                          LengthLimitingTextInputFormatter(4)
+                          LengthLimitingTextInputFormatter(6)
                         ],
                         decoration: InputDecoration(
                           hintText: '****',
@@ -98,7 +98,7 @@ class Signup extends StatelessWidget {
                         obscureText: true,
                         keyboardType: TextInputType.number,
                         inputFormatters: [
-                          LengthLimitingTextInputFormatter(4)
+                          LengthLimitingTextInputFormatter(6)
                         ],
                         decoration: InputDecoration(
                           hintText: '****',
@@ -113,7 +113,6 @@ class Signup extends StatelessWidget {
                         },
                         child: Icon(
                           Icons.send,
-                          color: Colors.black,
                         ),
                       ),
                       // SizedBox(height: 20,),

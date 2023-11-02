@@ -30,26 +30,39 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('CELAM'),
+        backgroundColor: Color(0xFF255e36),
+        title: Text(
+          'CELAM',
+          style: TextStyle(
+            fontWeight: FontWeight.bold,
+            fontFamily: 'KemasyuranJawa',
+            color: Colors.white
+          ),
+        ),
+        centerTitle: true,
       ),
       body: _children[_currentPages],
       bottomNavigationBar: BottomNavigationBar(
         onTap: onTapped,
         currentIndex: _currentPages,
+        selectedItemColor: Color(0xFF255e36),
+        unselectedItemColor: Colors.grey,
         items: [
           BottomNavigationBarItem(
             icon: Icon(Icons.home),
-            label: 'Home'
+            label: 'Beranda'
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.attach_money),
-            label: 'Topup'
+            label: 'Deposit'
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.notifications),
-            label: 'Account'
+            label: 'Akun'
           ),
         ],
+        elevation: 10,
+        backgroundColor: Color(0xFFf9f7f7),
       ),
     );
   }
